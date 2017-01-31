@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <meta charset = "utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+        <meta name="viewport" content ="width=device-width, initial-scale=1">
+        <!-- les trois meta sont obligatoirers -->
+        <!-- bailes de référencement -->
+        <meta name="description" content="Portfolio d'Aline Brand - BTS SIO SLAM">
+        <meta name="author" content="Aline Brand">
+        <link rel="icon" href="favicon.ico">
+        <title>Portfolio d'Aline Brand (BTS SIO 2017)</title>
+        <!-- Déclaration d'une feuille de bootstrap -->
+        <link href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+    </head>
+    <!-- Appel de la classe container pour créer la grille standard de bootstrap-->
+    <body><nav class="navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <!-- pour les mobiles-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#navbar" aria-controls="navbar">
+
+                        <span class="sr-only">Navigation raccourcie</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Mon portfolio</a>
+                </div>
+                <!-- items de barre de navigation-->
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="index.html">
+                                <!-- icone maison-->
+                                <span class="glyphicon-home"></span>
+                                Accueil
+                            </a>
+                        </li>
+                        <li><a href="#"><span class="glyphicon glyphicon-object-align-top"></span> CV </a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                <span class="glyphicon glyphicon-list-alt"></span> Réalisations
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation" class="dropdown-header">En autonomie</li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Application Android</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Site web</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Études et analyses</a>
+                                </li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation" class="dropdown-header">En entreprise</li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Projet de stage</a></li>
+
+                            </ul>
+                        </li>
+                        <!-- elements jury-->
+                        <!-- Tete de menu-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown_toggle" data-toggle="dropdown" role="button">
+                                <span class="glyphicon glyphicon-education"></span>
+                                Jury E4 BTS SIO<span class="caret"></span>
+                            </a>
+                            <!-- titre1-->
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation" class="dropdown-header">
+                                    Documentation contexte
+                                </li>
+                                <!-- Sous-menus-->
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Présentation</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Application</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Missions à réaliser</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Annexes</a>
+                                </li>
+                                <!-- Séparateur-->
+                                <li role="presentation" class="divider"></li>
+                                <!-- Titre section2-->
+                                <li role="presentation" class="dropdown-header">Fiches d'examen</li>
+                                <!--lignes-->
+                                <li role="presentation"><a role="menuitem" href="#">Situation professionnelle n°1</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Situation professionnelle n°2</a></li>
+                                <!-- Séparateur-->
+                                <li role="presentation" class="divider"></li>
+                                <!-- Titre section3-->
+                                <li role="presentation" class="dropdown-header">Démonstrations</li>
+                                <!--lignes-->
+                                <li role="presentation"><a role="menuitem" href="#">Démo SP n°1</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Démo SP n°2</a></li>
+                                <!-- Séparateur-->
+                                <li role="presentation" class="divider"></li>
+                                <!-- Titre section4-->
+                                <li role="presentation" class="dropdown-header">Codes sources</li>
+                                <li role="presentation"><a role="menuitem" href="#">Source SP n°1</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Source SP n°2</a></li>
+                            </ul>
+                        </li>
+                        <!-- Contact-->
+                        <!-- Tete de menu-->
+                        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>
+                                Me contacter<span class="caret"></span>
+                            </a>
+                        </li>
+
+                </div><!-- /nav.collapse-->
+            </div><!-- /navbar.collapse-->
+        </nav>
+        <!-- Fichiers JQuery nécessaires au bon fonctionnement de Bootstrap à la fin-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="css/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for surface/desktop windows 8 bug  -->
+        <script src="css/bootstrap-3.3.7-dist/js/ie10-viewport-bug-workaround.js"></script>
+        <!-- Texte page d'accueil -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Bonjour et bienvenue sur mon portfolio !</h1>
+                <p>
+                    <img id="maPhoto" class="pull-left img-rounded" src="images/AmeliaPilou.jpg" alt="Ma photo d'identité"/>
+                    Je m'appelle Aline Brand. Ce site a pour vocation de vous communiquer toutes les 
+                    informations nécessaires au déroulement des épreuves E4 et E6 du BTS SIO (Services Informatiques aux Organisations).
+                </p>
+                <p>
+                    <a class="btn-primary btn-lg" href="#" role="button"> En savoir plus &raquo;</a>
+                </p>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>Étudiante du CNED</h2>
+                        <p>J'ai choisi de suivre le BTS SIO à distance par le Centre National d'Enseignement à Distance
+                        car en tant que freelance, je suis rompue au travail en autonomie et souhaitais diversifier mon activité.
+                        J'ai été largement comblée, puisque ce BTS aborde à la fois des compétences "physiques" liées au matériel et au réseau, 
+                        mais aussi et surtout, dans l'option SLAM (Solutions Logicielles et Applications Métiers), des outils applicatifs 
+                        et langages de programmations pationnants.
+                        </p>
+                        <p><a class="btn btn-default" href="http://www.cned.fr" target="_blank" role="button">En savoir plus &raquo;</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Le BTS SIO</h2>
+                    <p>
+                        Passionnée d'informatique, j'ai exercé pendant plus de dix ans, l'activité de graphiste 3D, 
+                        qui m'a permis d'aborder les domaines du jeu vidéos sur PC, console et smartphone, puis
+                        les activités publiciatires, télévisuelles et mercatiques. 
+                        Pour ma reconversion professionnelle, le BTS SIO s'est présenté comme une évidence, une réelle évolution. 
+                        Avec 62% d'informatique "pure", 15% d'économmie, management et droit de l'informatique,
+                        8% d'anglais, 8% de culture générale et 7% de mathématiques, cette formation m'a permis de réviser les "fondamentaux"
+                        tout en me spécialisant dans une activité, qui était jusqu'à présent l'apanage de mes collaborateurs.
+                    </p>
+                    <p><a class="btn btn-default" href="https://fr.wikipedia.org/wiki/Brevet_de_technicien_sup%C3%A9rieur_-_Services_informatiques_aux_organisations" 
+                          target="_blank" role="button">En savoir plus &raquo;</a>
+                    </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Option B Slam</h2>
+                    <p>
+                        L'option Solutions Logicielles et Applications Métiers m'a séduite car elle manipule le langage. Par ce langage, on envoie
+                        des informations qui elles-mêmes sont retraitées pour communiquer avec l'utilisateur final.
+                        Après avoir travaillé en étroite collaboration avec les équipes de développement au sein de projets complets,
+                        je souhaite maintenant en faire partie intégrante. Travailler en équipe à la satisfaction de besoins clients,
+                        définir des spécifications, faire des tests, corriger des bugs, faire de la maintenance et de la documentation sont 
+                        autant d'aspects auxquels je participe désormais activement. Cette formation m'a également permis d'aborder des domaines 
+                        qui m'étaient jusqu'alors inconnus : Modélisation de données avec Merise et UML, conception de bases de données 
+                        sous PostgreSQL et MySQL, programmations objet et événementielle avec Java, C#, php et VBA, gestion de projet, méthodes agiles.
+                        Autant de découvertes pationnantes et de matière grise en ébullition!
+                    </p>
+                    <p><a class="btn btn-default" href="http://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/BTS-Services-informatiques-aux-organisations-option-B-solutions-logicielles-et-applications-metiers"
+                          target="blank" role="button">En savoir plus &raquo;</a>
+                    </p>
+                    </div>
+                    
+                </div>
+                <hr/>
+                <p id="copyright">&copy; Aline Brand 2017</p>
+            </div>
+        </footer>
+    </body>
+</html>
