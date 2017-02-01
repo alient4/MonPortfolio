@@ -1,16 +1,452 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+
+<html lang="fr">
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset = "utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+        <meta name="viewport" content ="width=device-width, initial-scale=1">
+        <!-- les trois meta sont obligatoirers -->
+        <!-- balises de référencement -->
+        <meta name="description" content="Portfolio d'Aline Brand - BTS SIO SLAM">
+        <meta name="author" content="Aline Brand">
+        <link rel="icon" href="favicon.ico">
+        <title>Portfolio d'Aline Brand (BTS SIO 2017)</title>
+        <!-- Déclaration d'une feuille de bootstrap -->
+        <link href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/cv.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
-        <div>TODO write content</div>
+    <!-- Appel de la classe container pour créer la grille standard de bootstrap-->
+    <body><nav class="navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <!-- pour les mobiles-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#navbar" aria-controls="navbar">
+
+                        <span class="sr-only">Navigation raccourcie</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Mon portfolio</a>
+                </div>
+                <!-- items de barre de navigation-->
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html">
+                                <!-- icone maison-->
+                                <span class="glyphicon-home"></span>
+                                Accueil
+                            </a>
+                        </li>
+                        <li class="active"><a href="cv.html"><span class="glyphicon glyphicon-object-align-top"></span> CV </a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                <span class="glyphicon glyphicon-list-alt"></span> Réalisations
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation" class="dropdown-header">En autonomie</li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Application Android</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Site web</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Études et analyses</a>
+                                </li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation" class="dropdown-header">En entreprise</li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Projet de stage</a></li>
+
+                            </ul>
+                        </li>
+                        <!-- elements jury-->
+                        <!-- Tete de menu-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown_toggle" data-toggle="dropdown" role="button">
+                                <span class="glyphicon glyphicon-education"></span>
+                                Jury E4 BTS SIO<span class="caret"></span>
+                            </a>
+                            <!-- titre1-->
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation" class="dropdown-header">
+                                    Documentation contexte
+                                </li>
+                                <!-- Sous-menus-->
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Présentation</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Application</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Missions à réaliser</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Annexes</a>
+                                </li>
+                                <!-- Séparateur-->
+                                <li role="presentation" class="divider"></li>
+                                <!-- Titre section2-->
+                                <li role="presentation" class="dropdown-header">Fiches d'examen</li>
+                                <!--lignes-->
+                                <li role="presentation"><a role="menuitem" href="#">Situation professionnelle n°1</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Situation professionnelle n°2</a></li>
+                                <!-- Séparateur-->
+                                <li role="presentation" class="divider"></li>
+                                <!-- Titre section3-->
+                                <li role="presentation" class="dropdown-header">Démonstrations</li>
+                                <!--lignes-->
+                                <li role="presentation"><a role="menuitem" href="#">Démo SP n°1</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Démo SP n°2</a></li>
+                                <!-- Séparateur-->
+                                <li role="presentation" class="divider"></li>
+                                <!-- Titre section4-->
+                                <li role="presentation" class="dropdown-header">Codes sources</li>
+                                <li role="presentation"><a role="menuitem" href="#">Source SP n°1</a></li>
+                                <li role="presentation"><a role="menuitem" href="#">Source SP n°2</a></li>
+                            </ul>
+                        </li>
+                        <!-- Contact-->
+                        <!-- Tete de menu-->
+                        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>
+                                Me contacter<span class="caret"></span>
+                            </a>
+                        </li>
+
+                </div><!-- /nav.collapse-->
+            </div><!-- /navbar.collapse-->
+        </nav>
+        <!-- Fichiers JQuery nécessaires au bon fonctionnement de Bootstrap à la fin-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="css/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for surface/desktop windows 8 bug  -->
+        <script src="css/bootstrap-3.3.7-dist/js/ie10-viewport-bug-workaround.js"></script>
+        <!-- Texte page CV -->
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row cadreCV">
+                    <div id="cv-photo" class="text-center">
+                        <div id="cv-photo">
+                            <img src="images/ID_Aline_128_square.jpg" alt="Ma photo d'identité"/>
+                        </div>
+                        <div id="cv-intro"><h1>Bonjour, je m'appelle<span>Aline </span> et voici mon CV</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cadreCV">
+                    <div class="col-xs-12 col-sm-7">
+
+                        <!-- partie gauche -->
+                        <div class="rubrique">
+                            <h2>
+                                <span class="glyphicon glyphicon-comment"></span>En quelques mots</h2>
+                            <p>J'effectue actuellement une reconversion professionnelle par l'intermédiaire du CNED.
+                                Le BTS Services Informatiques aux Organisations correspond à une évolution, un tremplin vers
+                                un métier qui me ressemble.
+                                Passionnée d'informatique et de nouvelles technologies, je souhaite avant tout continuer à
+                                évoluer dans cet univers, à la découverte de connaissances inédites.
+                            </p>
+                        </div>
+                        <div class="rubrique">
+                            <h2>
+                                <span class="glyphicon glyphicon-education"></span>Parcours scolaire</h2>
+                            <ul id='parcours' class='clearfix'>
+                                <li>
+                                    <div class="date pull-left">
+                                        <span class='glyphicon glyphicon-record'></span>&nbsp;2017
+                                    </div>
+                                    <div class="details pull-right">
+                                        <h3> BTS SIO option SLAM (en cours...)</h3>
+                                        <p>Brevet de Technicien Supérieur "Services Informatiques aux Organisations",
+                                            option "Solutions Logicielles et Applications Métiers"
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="date pull-left">
+                                        <span class='glyphicon glyphicon-record'></span>&nbsp;2015
+                                    </div>
+                                    <div class="details pull-right">
+                                        <h3> Concours d’entrée à l'école d’orthophonie de Paris</h3>
+                                        <p> Admissible à l'oral, parmi une sélection de
+                                            10% des candidats à l'écrit. Concours fondé sur la maîtrise
+                                            de la langue française.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="date pull-left">
+                                        <span class='glyphicon glyphicon-record'></span>&nbsp;2008
+                                    </div>
+                                    <div class="details pull-right">
+                                        <h3>Formations professionnelles</h3>
+                                        <p> Principes de l’animation 3D et du StoryBoard – Ecole « Les Gobelins », Paris</p>
+                                        <p>Formation en anglais : un an à raison d’1 heure par semaine</p>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="date pull-left">
+                                        <span class='glyphicon glyphicon-record'></span>&nbsp;2005
+                                    </div>
+                                    <div class="details pull-right">
+                                        <h3>Les gobelins, Paris</h3>
+                                        <p> Formation Maya 6.5 sur une durée d'un mois</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="date pull-left">
+                                        <span class='glyphicon glyphicon-record'></span>&nbsp;2000
+                                    </div>
+                                    <div class="details pull-right">
+                                        <h3>Beaux Arts de Paris</h3>
+                                        <p> Élève aux ateliers des Beaux-Arts de Paris, quatre heures par semaine en soirée</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="date pull-left">
+                                        <span class='glyphicon glyphicon-record'></span>&nbsp;1998
+                                    </div>
+                                    <div class="details pull-right">
+                                        <h3>Formations graphiques techniques</h3>
+                                        <p>Spécialisation 3DSMax – IESA - Paris, 75</p>
+                                        <p>Formation graphique - EMC - Malakoff, 92 en contrat de qualification</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="date pull-left">
+                                        <span class='glyphicon glyphicon-record'></span>&nbsp;1997
+                                    </div>
+                                    <div class="details pull-right">
+                                        <h3>CPEG</h3>
+                                        <p>Certificat Préparatoire aux Études de Gestion, le CNED, Poitiers</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="date pull-left">
+                                        <span class='glyphicon glyphicon-record'></span>&nbsp;1994
+                                    </div>
+                                    <div class="details pull-right">
+                                        <h3>BTS CI</h3>
+                                        <p>Brevet de Technicien Supérieur en Commerce International ARCA – Evry, 91-</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="date pull-left">
+                                        <span class='glyphicon glyphicon-record'></span>&nbsp;1992
+                                    </div>
+                                    <div class="details pull-right">
+                                        <h3>BAC A1</h3>
+                                        <p>Bac littéraire, option mathématiques</p>
+                                    </div>
+                                </li>
+                        </div>
+                        <div class="rubrique">
+                            <h2>
+                                <span class="glyphicon glyphicon-briefcase"></span>Expériences professionnelles</h2>
+                            <div class="experience clearfix">
+                                <div class="col-xs-3">
+                                    <div class="lieu">Mairie de Savigny-le-Temple</div>
+                                    <div class="date">2016 (10 semaines)</div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <div class="profession">Développement VBA sous Access</div>
+
+                                    <div class="details"> Création d'une application pour la gestion des adhérents
+                                        des centres sociaux de la ville. Modélisation des données sous Merise 2 avec Win'design, 
+                                        création de la base de données et des formulaires sous Access avec respect des contraintes du
+                                        schéma relationnel de données, écriture de requêtes SQL, fonctions et procédures en VBA
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience clearfix">
+                                <div class="col-xs-3">
+                                    <div class="lieu">A distance </div>
+                                    <div class="date">2017</div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <div class="profession">Contexte GSB : développement PHP sous Netbeans, avec gestionnaire de versions Git</div>
+
+                                    <div class="details"> Dans le cadre du Projet Personnalisé encadré, développement php avec intégration
+                                        à un serveur apache sous linux (debian). 
+                                        Création de la rubrique dédiée à la comptabilité à partir d'une
+                                        application existante.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience clearfix">
+                                <div class="col-xs-3">
+                                    <div class="lieu">A distance </div>
+                                    <div class="date">2017</div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <div class="profession">Contexte Gsb : Développement Java sous Android Studio</div>
+                                    <div class="details"> Dans le cadre du Projet Personnalisé encadré, développement java avec déploiement sur smartphone
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience clearfix">
+                                <div class="col-xs-3">
+                                    <div class="lieu">A droite, à gauche </div>
+                                    <div class="date">2005 à 2015</div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <div class="profession">Missions freealances en graphisme 3D</div>
+                                    <div class="details">
+                                        Bulkypix, Vélizy (jeux sur smartphones et tablettes) : temps réel (modélisation, mapping, effets spéciaux) et haute définition
+                                        prototypes et teasers : Spacefinger, 9G effects, Hysteria2 , myPerfectMan<br/>
+                                        En sous-traitance pour Veolia : modélisation, animation, mapping, rendu et post-production d’une bulle d’eau pour une présentation organisée par la marque<br/>
+                                        Cité des sciences : Promotion des Fablabs. Cinématiques 3D pour le lancement de la Cité des jeux vidéos.<br/>
+
+                                        Talented People pour AMA Studios, Belgique (Rigging du personnage principal pour le prototype du jeu FIGHTERS UNCAGED d’Ubisoft sur Xbox 360)<br/>
+
+                                        Cité des sciences de La Villette « Le Rêve de Galilée » Système de Ptolémée : modélisation haute définition : diffusion sur l’écran hémisphérique du Planétarium<br/>
+
+                                        Interactive Factory, St-Ouen<br/>
+                                    Habillage tv : "Le Certif" – Coyote, diffusion TF1 – "Le Soiring" : Endemol , diffusion TPS Star -  "Pour le Plaisir" – ADL TV, diffusion France3<br/>
+                                    Clips 3d: BéBé Lilly– Allo Papy- La jungle- Les Cow-Boys– Heben Music "Pinocchio en hiver", "DJ Pinocchio", "Pinocchio Le Clown" - EMI "Florabelle et La Mushroom Family", "Love Is All"  - EMI -  "Dorothée"  -  "La valise" - EMI<br/>
+                                    Ginger Studio : Publicité Web pour la sortie de la PSP (Donneur d’ordre : Sony)<br/>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience clearfix">
+                            <div class="col-xs-3">
+                                <div class="lieu">Vivendi Games Mobile, Vélizy, 78</div>
+                                <div class="date">2006 à 2008</div>
+                            </div>
+                            <div class="col-xs-9">
+                                <div class="profession">Responsable 3D</div>
+                                <div class="details">
+                                    Préproduction, modélisation,  rigging,  skinning,  rendu, animations basiques , debug, formation et documentation technique
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience clearfix">
+                            <div class="col-xs-3">
+                                <div class="lieu">Coktel, Vélizy, 78</div>
+                                <div class="date">1999 à 2005</div>
+                            </div>
+                            <div class="col-xs-9">
+                                <div class="profession"> Graphiste 3D </div>
+                                <div class="details">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience clearfix">
+                            <div class="col-xs-3">
+                                <div class="lieu">GreenMouse, Montreuil, 93</div>
+                                <div class="date">1998 à 1999</div>
+                            </div>
+                            <div class="col-xs-9">
+                                <div class="profession">Maquettiste PAO</div>
+
+                            </div>
+                        </div>
+                        <div class="experience clearfix">
+                            <div class="col-xs-3">
+                                <div class="lieu">Evry, 91</div>
+                                <div class="date">1994 à 1998</div>
+                            </div>
+                            <div class="col-xs-9">
+                                <div class="profession">Assistante de direction commerciale</div>
+                                <div class="details">
+                                    Hewlett Packard, SAS
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                       <!-- partie droite -->
+                <div class="col-xs-12 col-sm-5">
+                    <div class="rubrique clearfix">
+                        <h2><span class="glyphicon glyphicon-user"></span>Me contacter</h2>
+                        <div class="meContacter">
+                            <div class="details pull-left">
+                                <a href="mailto:alient4@hotmail.com?subjet=Contact depuis le CV en ligne" title="Mail d'Aline Brand">
+                                    <img class="contact-icon" src="images/cv/mail-dreamstale47.png" alt="Icone de mail"/> MailTo
+                                </a>
+                            </div>
+                        </div>
+                       <div class="meContacter">
+                            <div class="details pull-left">
+                                <a href="http://linkedIn.com/in/alineBrand" title="Lien vers le profil LinkedIn d'Aline Brand">
+                                    <img class="contact-icon" src="images/cv/linkedin-dreamstale45.png" alt="Icone de LinkedIn"/> LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                   
+                    <div class="meContacter">
+                            <div class="details pull-left">
+                                <a href="https://github.com/AlineBrand/" title="Lien vers le compte Github d'Aline Brand">
+                                    <img class="contact-icon" src="images/cv/github2-dreamstale35.png" alt="Icone de gitHub"/> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h2>Étudiante du CNED</h2>
+                            <p>J'ai choisi de suivre le BTS SIO à distance par le Centre National d'Enseignement à Distance
+                                car en tant que freelance, je suis rompue au travail en autonomie et souhaitais diversifier mon activité.
+                                J'ai été largement comblée, puisque ce BTS aborde à la fois des compétences "physiques" liées au matériel et au réseau, 
+                                mais aussi et surtout, dans l'option SLAM (Solutions Logicielles et Applications Métiers), des outils applicatifs 
+                                et langages de programmations pationnants.
+                            </p>
+                            <p><a class="btn btn-default" href="http://www.cned.fr" target="_blank" role="button">En savoir plus &raquo;</a>
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <h2>Le BTS SIO</h2>
+                            <p>
+                                Passionnée d'informatique, j'ai exercé pendant plus de dix ans, l'activité de graphiste 3D, 
+                                qui m'a permis d'aborder les domaines du jeu vidéos sur PC, console et smartphone, puis
+                                les activités publiciatires, télévisuelles et mercatiques. 
+                                Pour ma reconversion professionnelle, le BTS SIO s'est présenté comme une évidence, une réelle évolution. 
+                                Avec 62% d'informatique "pure", 15% d'économmie, management et droit de l'informatique,
+                                8% d'anglais, 8% de culture générale et 7% de mathématiques, cette formation m'a permis de réviser les "fondamentaux"
+                                tout en me spécialisant dans une activité, qui était jusqu'à présent l'apanage de mes collaborateurs.
+                            </p>
+                            <p><a class="btn btn-default" href="https://fr.wikipedia.org/wiki/Brevet_de_technicien_sup%C3%A9rieur_-_Services_informatiques_aux_organisations" 
+                                  target="_blank" role="button">En savoir plus &raquo;</a>
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <h2>Option B Slam</h2>
+                            <p>
+                                L'option Solutions Logicielles et Applications Métiers m'a séduite car elle manipule le langage. Par ce langage, on envoie
+                                des informations qui elles-mêmes sont retraitées pour communiquer avec l'utilisateur final.
+                                Après avoir travaillé en étroite collaboration avec les équipes de développement au sein de projets complets,
+                                je souhaite maintenant en faire partie intégrante. Travailler en équipe à la satisfaction de besoins clients,
+                                définir des spécifications, faire des tests, corriger des bugs, faire de la maintenance et de la documentation sont 
+                                autant d'aspects auxquels je participe désormais activement. Cette formation m'a également permis d'aborder des domaines 
+                                qui m'étaient jusqu'alors inconnus : Modélisation de données avec Merise et UML, conception de bases de données 
+                                sous PostgreSQL et MySQL, programmations objet et événementielle avec Java, C#, php et VBA, gestion de projet, méthodes agiles.
+                                Autant de découvertes pationnantes et de matière grise en ébullition!
+                            </p>
+                            <p><a class="btn btn-default" href="http://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/BTS-Services-informatiques-aux-organisations-option-B-solutions-logicielles-et-applications-metiers"
+                                  target="blank" role="button">En savoir plus &raquo;</a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <hr/>
+                    <p id="copyright">&copy; Aline Brand 2017</p>
+                </div>
+            </footer>
     </body>
 </html>
