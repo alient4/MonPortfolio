@@ -89,5 +89,43 @@ Parcours scolaire******************
     -o-filter: grayscale(0);
 }
 
+/******************************************
+*     Compétences
+******************************************/
+#competences .container .libelle { float: left; font-size: 1.3em; }
+#competences .container .classement { float: right;
+    background: scroll transparent url(images/Red-Rating-Stars.png) no-repeat;
+    width: 160px; height: 27px; }
+#competences .container .classement0 { background-position: 0 -142px; }
+#competences .container .classement1 { background-position: 0 -112px; }
+#competences .container .classement2 { background-position: 0 -84px; }
+#competences .container .classement3 { background-position: 0 -56px; }
+#competences .container .classement4 { background-position: 0 -28px; }
+#competences .container .classement5 { background-position: 0 0px; }
+
+/******************************************
+*     Langues****************************
+******************************************/
+#langues .langue, #langues .niveau{ font-size: 1.3em; float: left; }
+#langues .langue { padding-top: 3px; }
+#langues .niveau{
+  float: right;
+}
+
+/******************************************
+*     Passions*************************
+******************************************/
+.passion{ color: #fff; display: inline-block; margin-right: 5px;
+          margin-bottom: 5px; padding: 5px 5px 5px 5px; background: #000;
+          position: relative; font-size: 1.2em; border-radius: 10px; }
+
+.passion .glyphicon {
+    font-size: 0.7em;
+}
+/******************************************
+*     Info complémentaires
+******************************************/
+#infos .container .libelle { float: left; font-size: 1.3em; }
+
 
 
